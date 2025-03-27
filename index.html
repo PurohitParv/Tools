@@ -332,55 +332,21 @@
 
         /* Footer */
         footer {
-            background-color: var(--dark);
+            background-color: var(--dark-color);
             color: white;
-            padding: 60px 0 20px;
-            margin-top: auto;
+            padding: 2rem 0;
+            margin-top: 3rem;
         }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-column h3 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background-color: var(--primary);
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
+        
         .footer-links a {
             color: #adb5bd;
             text-decoration: none;
-            transition: var(--transition);
+            margin-right: 15px;
         }
-
+        
         .footer-links a:hover {
             color: white;
-            padding-left: 5px;
         }
-
         .social-links {
             display: flex;
             gap: 15px;
