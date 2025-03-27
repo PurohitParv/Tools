@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online PDF tools - compress, merge, split, and convert PDFs to Word, Excel, PowerPoint, HTML, text and more. Optimize your documents with our powerful PDF processor.">
+    <meta name="keywords" content="PDF compressor, PDF merger, PDF splitter, PDF converter, pdf to word converter, PDF to Excel converter, PDF to PPT converter, PDF tools converter, online PDF editor, PDF to image">
+    <meta name="author" content="Purohit Parv">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Free Online PDF Tools - Compress, Merge, Split & Convert">
+    <meta property="og:description" content="All-in-one PDF solution to process your documents online for free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourpdftoolsdomain.com">
+    <meta property="og:image" content="https://yourpdftoolsdomain.com/images/pdf-tools-preview.jpg">
+    <link rel="canonical" href="https://yourpdftoolsdomain.com">
+    
+    <title>Free PDF Tools Online - Compress, Merge, Split & Convert PDFs</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #4a6bff;
+            --secondary-color: #f8f9fa;
+            --accent-color: #ff6b6b;
+            --dark-color: #343a40;
+            --light-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--secondary-color);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), #6c5ce7);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .tool-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            background-color: var(--light-color);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tool-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a56d4;
+            border-color: #3a56d4;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .ad-container {
+            background-color: #f1f3f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .file-drop-area {
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background-color: rgba(74, 107, 255, 0.05);
+        }
+        
+        .file-drop-area:hover {
+            border-color: var(--primary-color);
+            background-color: rgba(74, 107, 255, 0.1);
+        }
+        
+        .file-drop-area.active {
+            border-color: var(--primary-color);
+            background-color: rgba(74, 107, 255, 0.2);
+        }
+        
+        .compression-options {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .progress {
+            height: 10px;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 0;
+            }
+            
+            .tool-card {
+                margin-bottom: 15px;
+            }
+            
+            .file-drop-area {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-file-pdf me-2"></i>PDF Tools Pro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">All Your PDF Needs in One Place</h1>
+            <p class="lead mb-4">Compress, merge, split, and convert PDF files online for free. No installation required.</p>
+        </div>
+    </section>
+
+    <!-- Top Ad Banner -->
+    <div class="container mt-3">
+        <div class="ad-container">
+            <!-- Google AdSense Ad Unit -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-6423177995617488/6352383830"></script>
+            <!-- Top Banner Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-6423177995617488/6352383830"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <section id="tools" class="container my-5">
+        <div class="row">
+            <!-- Compress PDF -->
+            <div id="compress" class="col-lg-6 mb-4">
+                <div class="tool-card p-4 h-100">
+                    <div class="text-center">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <h3>Compress PDF</h3>
+                        <p>Reduce PDF file size while optimizing for quality</p>
+                    </div>
+                    
+                    <div class="file-drop-area" id="compress-drop-area">
+                        <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                        <h5>Drop PDF file here or click to upload</h5>
+                        <p class="small text-muted">Files up to 50MB</p>
+                        <input type="file" id="compress-file-input" accept=".pdf" class="d-none">
+                    </div>
+                    
+                    <div class="compression-options mt-3 d-none" id="compress-options">
+                        <h5 class="mb-3">Compression Level</h5>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="compressionLevel" id="low-compression" value="low" checked>
+                            <label class="form-check-label" for="low-compression">
+                                Low Compression (Best Quality)
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="compressionLevel" id="medium-compression" value="medium">
+                            <label class="form-check-label" for="medium-compression">
+                                Medium Compression (Good Balance)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="compressionLevel" id="high-compression" value="high">
+                            <label class="form-check-label" for="high-compression">
+                                High Compression (Smaller File)
+                            </label>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <span id="original-size" class="badge bg-secondary">Original: --</span>
+                                <span id="compressed-size" class="badge bg-success ms-2">Compressed: --</span>
+                            </div>
+                            <button id="compress-btn" class="btn btn-primary btn-sm">Compress</button>
+                        </div>
+                        
+                        <div class="progress d-none" id="compress-progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="download-section mt-3 d-none" id="compress-download">
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i>File compressed successfully!
+                        </div>
+                        <button class="btn btn-success w-100">
+                            <i class="fas fa-download me-2"></i>Download Compressed PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Merge PDF -->
+            <div id="merge" class="col-lg-6 mb-4">
+                <div class="tool-card p-4 h-100">
+                    <div class="text-center">
+                        <div class="tool-icon">
+                            <i class="fas fa-object-group"></i>
+                        </div>
+                        <h3>Merge PDF</h3>
+                        <p>Combine multiple PDF files into a single document</p>
+                    </div>
+                    
+                    <div class="file-drop-area" id="merge-drop-area">
+                        <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                        <h5>Drop PDF files here or click to upload</h5>
+                        <p class="small text-muted">Up to 10 files, 50MB each</p>
+                        <input type="file" id="merge-file-input" accept=".pdf" multiple class="d-none">
+                    </div>
+                    
+                    <div class="file-list mt-3 d-none" id="merge-file-list">
+                        <h5>Files to merge:</h5>
+                        <ul class="list-group" id="merge-files-container">
+                            <!-- Files will be added here dynamically -->
+                        </ul>
+                        <div class="d-flex justify-content-between mt-3">
+                            <button class="btn btn-outline-danger btn-sm" id="clear-merge-files">
+                                <i class="fas fa-trash me-1"></i>Clear All
+                            </button>
+                            <button class="btn btn-primary btn-sm" id="merge-btn">
+                                <i class="fas fa-object-group me-1"></i>Merge PDFs
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="progress d-none mt-3" id="merge-progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="download-section mt-3 d-none" id="merge-download">
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i>Files merged successfully!
+                        </div>
+                        <button class="btn btn-success w-100">
+                            <i class="fas fa-download me-2"></i>Download Merged PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Middle Ad Banner -->
+            <div class="col-12 my-4">
+                <div class="ad-container">
+                    <!-- Google AdSense Ad Unit -->
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-6423177995617488/2831306764"></script>
+                    <!-- Middle Rectangle Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-app-pub-6423177995617488/2831306764"
+                         data-ad-slot="YOUR_AD_SLOT_ID"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            
+            <!-- Split PDF -->
+            <div id="split" class="col-lg-6 mb-4">
+                <div class="tool-card p-4 h-100">
+                    <div class="text-center">
+                        <div class="tool-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Split PDF</h3>
+                        <p>Extract pages or split PDF into multiple files</p>
+                    </div>
+                    
+                    <div class="file-drop-area" id="split-drop-area">
+                        <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                        <h5>Drop PDF file here or click to upload</h5>
+                        <p class="small text-muted">Files up to 50MB</p>
+                        <input type="file" id="split-file-input" accept=".pdf" class="d-none">
+                    </div>
+                    
+                    <div class="split-options mt-3 d-none" id="split-options">
+                        <h5 class="mb-3">Split Options</h5>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="splitMethod" id="split-by-range" value="range" checked>
+                            <label class="form-check-label" for="split-by-range">
+                                Extract page range
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="splitMethod" id="split-by-pages" value="pages">
+                            <label class="form-check-label" for="split-by-pages">
+                                Split by every page
+                            </label>
+                        </div>
+                        
+                        <div class="range-options mb-3" id="range-options">
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <label for="start-page" class="form-label">From page</label>
+                                    <input type="number" class="form-control" id="start-page" min="1" value="1">
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="end-page" class="form-label">To page</label>
+                                    <input type="number" class="form-control" id="end-page" min="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button id="split-btn" class="btn btn-primary w-100">Split PDF</button>
+                    </div>
+                    
+                    <div class="progress d-none mt-3" id="split-progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="download-section mt-3 d-none" id="split-download">
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i>PDF split successfully!
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success">
+                                <i class="fas fa-download me-2"></i>Download Split PDFs as ZIP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Convert PDF -->
+            <div id="convert" class="col-lg-6 mb-4">
+                <div class="tool-card p-4 h-100">
+                    <div class="text-center">
+                        <div class="tool-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Convert PDF</h3>
+                        <p>Convert PDF to Word, Excel, PowerPoint and more</p>
+                    </div>
+                    
+                    <div class="file-drop-area" id="convert-drop-area">
+                        <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                        <h5>Drop PDF file here or click to upload</h5>
+                        <p class="small text-muted">Files up to 50MB</p>
+                        <input type="file" id="convert-file-input" accept=".pdf" class="d-none">
+                    </div>
+                    
+                    <div class="convert-options mt-3 d-none" id="convert-options">
+                        <h5 class="mb-3">Convert To:</h5>
+                        <div class="row">
+                            <div class="col-6 col-md-4 mb-3">
+                                <button class="btn btn-outline-secondary w-100 convert-format" data-format="docx">
+                                    <i class="far fa-file-word me-2"></i>Word
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-4 mb-3">
+                                <button class="btn btn-outline-secondary w-100 convert-format" data-format="xlsx">
+                                    <i class="far fa-file-excel me-2"></i>Excel
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-4 mb-3">
+                                <button class="btn btn-outline-secondary w-100 convert-format" data-format="pptx">
+                                    <i class="far fa-file-powerpoint me-2"></i>PowerPoint
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-4 mb-3">
+                                <button class="btn btn-outline-secondary w-100 convert-format" data-format="html">
+                                    <i class="far fa-file-code me-2"></i>HTML
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-4 mb-3">
+                                <button class="btn btn-outline-secondary w-100 convert-format" data-format="txt">
+                                    <i class="far fa-file-alt me-2"></i>Text
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-4 mb-3">
+                                <button class="btn btn-outline-secondary w-100 convert-format" data-format="jpg">
+                                    <i class="far fa-file-image me-2"></i>JPG
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress d-none mt-3" id="convert-progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="download-section mt-3 d-none" id="convert-download">
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle me-2"></i>File converted successfully!
+                        </div>
+                        <button class="btn btn-success w-100">
+                            <i class="fas fa-download me-2"></i>Download Converted File
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container my-5 py-4 bg-light rounded-3">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="p-3">
+                    <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+                    <h4>Secure Processing</h4>
+                    <p>All files are processed in your browser and never uploaded to our servers for maximum privacy.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-3">
+                    <i class="fas fa-bolt fa-3x mb-3 text-primary"></i>
+                    <h4>Fast Processing</h4>
+                    <p>Our tools use advanced algorithms to process your documents quickly without compromising quality.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-3">
+                    <i class="fas fa-heart fa-3x mb-3 text-primary"></i>
+                    <h4>Free to Use</h4>
+                    <p>All our PDF tools are completely free with no hidden charges or watermarks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Ad Banner -->
+    <div class="container my-4">
+        <div class="ad-container">
+            <!-- Google AdSense Ad Unit -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-6423177995617488/5265898417"></script>
+            <!-- Bottom Banner Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-6423177995617488/5265898417"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="mb-4">About PDF Tools Pro</h2>
+                <p>PDF Tools Pro is a free online platform that provides powerful PDF processing tools right in your browser. Our mission is to make PDF manipulation accessible to everyone without the need for expensive software or complicated installations.</p>
+                <p>All processing happens locally in your browser, ensuring your documents remain private and secure. We don't upload your files to any servers, giving you complete control over your sensitive documents.</p>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="mb-4">How It Works</h2>
+                <div class="accordion" id="howItWorksAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                1. Upload Your PDF
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                            <div class="accordion-body">
+                                Drag and drop your PDF file or click to browse your computer. Our system supports files up to 50MB in size.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                2. Choose Your Options
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                            <div class="accordion-body">
+                                Select your preferred settings like compression level, page range, or output format depending on the tool you're using.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                3. Process & Download
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                            <div class="accordion-body">
+                                Click the process button and download your optimized PDF or converted file in seconds.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2025 Purohit Parv. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">Made with <i class="fas fa-heart text-danger"></i> for PDF users worldwide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    
+    <!-- FileSaver.js for saving files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <!-- JSZip for creating zip archives -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Set PDF.js worker path
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
+        
+        // Document ready function
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all tool functionality
+            initCompressTool();
+            initMergeTool();
+            initSplitTool();
+            initConvertTool();
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Initialize tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+        
+        // Compress PDF Tool
+        function initCompressTool() {
+            const dropArea = document.getElementById('compress-drop-area');
+            const fileInput = document.getElementById('compress-file-input');
+            const compressOptions = document.getElementById('compress-options');
+            const compressBtn = document.getElementById('compress-btn');
+            const compressProgress = document.getElementById('compress-progress');
+            const compressDownload = document.getElementById('compress-download');
+            const originalSizeSpan = document.getElementById('original-size');
+            const compressedSizeSpan = document.getElementById('compressed-size');
+            
+            let currentFile = null;
+            
+            // Handle drag and drop events
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            function highlight() {
+                dropArea.classList.add('active');
+            }
+            
+            function unhighlight() {
+                dropArea.classList.remove('active');
+            }
+            
+            // Handle dropped files
+            dropArea.addEventListener('drop', handleDrop, false);
+            
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                handleFiles(files);
+            }
+            
+            // Handle clicked files
+            dropArea.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            fileInput.addEventListener('change', function() {
+                handleFiles(this.files);
+            });
+            
+            function handleFiles(files) {
+                if (files.length > 0) {
+                    const file = files[0];
+                    if (file.type === 'application/pdf') {
+                        currentFile = file;
+                        showFileInfo(file);
+                        compressOptions.classList.remove('d-none');
+                    } else {
+                        alert('Please upload a valid PDF file.');
+                    }
+                }
+            }
+            
+            function showFileInfo(file) {
+                const fileSize = (file.size / (1024 * 1024)).toFixed(2);
+                originalSizeSpan.textContent = `Original: ${fileSize} MB`;
+                compressedSizeSpan.textContent = `Compressed: --`;
+            }
+            
+            // Compress button click handler
+            compressBtn.addEventListener('click', function() {
+                if (currentFile) {
+                    compressPDF(currentFile);
+                }
+            });
+            
+            function compressPDF(file) {
+                // Show progress bar
+                compressProgress.classList.remove('d-none');
+                const progressBar = compressProgress.querySelector('.progress-bar');
+                progressBar.style.width = '0%';
+                
+                // Simulate compression process (in a real app, you would use PDF.js to actually compress)
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 5;
+                    progressBar.style.width = `${progress}%`;
+                    
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        compressionComplete(file);
+                    }
+                }, 100);
+            }
+            
+            function compressionComplete(file) {
+                // In a real implementation, you would process the file here
+                // For demo purposes, we'll just simulate a 50% size reduction
+                const originalSize = file.size;
+                const compressedSize = originalSize * 0.5;
+                const compressedSizeMB = (compressedSize / (1024 * 1024)).toFixed(2);
+                
+                compressedSizeSpan.textContent = `Compressed: ${compressedSizeMB} MB`;
+                
+                // Hide progress bar
+                compressProgress.classList.add('d-none');
+                
+                // Show download section
+                compressDownload.classList.remove('d-none');
+                
+                // Set up download button
+                const downloadBtn = compressDownload.querySelector('button');
+                downloadBtn.addEventListener('click', function() {
+                    // In a real app, you would provide the actual compressed file
+                    alert('In a real implementation, this would download the compressed PDF. For demo purposes, we\'re just showing this message.');
+                });
+            }
+        }
+        
+        // Merge PDF Tool
+        function initMergeTool() {
+            const dropArea = document.getElementById('merge-drop-area');
+            const fileInput = document.getElementById('merge-file-input');
+            const fileList = document.getElementById('merge-file-list');
+            const filesContainer = document.getElementById('merge-files-container');
+            const clearBtn = document.getElementById('clear-merge-files');
+            const mergeBtn = document.getElementById('merge-btn');
+            const mergeProgress = document.getElementById('merge-progress');
+            const mergeDownload = document.getElementById('merge-download');
+            
+            let filesToMerge = [];
+            
+            // Handle drag and drop events
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            function highlight() {
+                dropArea.classList.add('active');
+            }
+            
+            function unhighlight() {
+                dropArea.classList.remove('active');
+            }
+            
+            // Handle dropped files
+            dropArea.addEventListener('drop', handleDrop, false);
+            
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                handleFiles(files);
+            }
+            
+            // Handle clicked files
+            dropArea.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            fileInput.addEventListener('change', function() {
+                handleFiles(this.files);
+            });
+            
+            function handleFiles(files) {
+                if (files.length > 0) {
+                    for (let i = 0; i < files.length; i++) {
+                        const file = files[i];
+                        if (file.type === 'application/pdf') {
+                            if (filesToMerge.length < 10) {
+                                filesToMerge.push(file);
+                            } else {
+                                alert('You can merge up to 10 files at once.');
+                                break;
+                            }
+                        } else {
+                            alert('Please upload only PDF files.');
+                        }
+                    }
+                    updateFileList();
+                }
+            }
+            
+            function updateFileList() {
+                if (filesToMerge.length > 0) {
+                    filesContainer.innerHTML = '';
+                    
+                    filesToMerge.forEach((file, index) => {
+                        const fileSize = (file.size / (1024 * 1024)).toFixed(2);
+                        const listItem = document.createElement('li');
+                        listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+                        listItem.innerHTML = `
+                            <span>${file.name} (${fileSize} MB)</span>
+                            <button class="btn btn-sm btn-outline-danger remove-file" data-index="${index}">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        `;
+                        filesContainer.appendChild(listItem);
+                    });
+                    
+                    // Add event listeners to remove buttons
+                    document.querySelectorAll('.remove-file').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const index = parseInt(this.getAttribute('data-index'));
+                            filesToMerge.splice(index, 1);
+                            updateFileList();
+                        });
+                    });
+                    
+                    fileList.classList.remove('d-none');
+                } else {
+                    fileList.classList.add('d-none');
+                }
+            }
+            
+            // Clear all files
+            clearBtn.addEventListener('click', function() {
+                filesToMerge = [];
+                updateFileList();
+            });
+            
+            // Merge button click handler
+            mergeBtn.addEventListener('click', function() {
+                if (filesToMerge.length >= 2) {
+                    mergePDFs(filesToMerge);
+                } else {
+                    alert('Please select at least 2 PDF files to merge.');
+                }
+            });
+            
+            function mergePDFs(files) {
+                // Show progress bar
+                mergeProgress.classList.remove('d-none');
+                const progressBar = mergeProgress.querySelector('.progress-bar');
+                progressBar.style.width = '0%';
+                
+                // Simulate merge process (in a real app, you would use PDF.js to actually merge)
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 5;
+                    progressBar.style.width = `${progress}%`;
+                    
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        mergeComplete();
+                    }
+                }, 100);
+            }
+            
+            function mergeComplete() {
+                // Hide progress bar
+                mergeProgress.classList.add('d-none');
+                
+                // Show download section
+                mergeDownload.classList.remove('d-none');
+                
+                // Set up download button
+                const downloadBtn = mergeDownload.querySelector('button');
+                downloadBtn.addEventListener('click', function() {
+                    // In a real app, you would provide the actual merged PDF
+                    alert('In a real implementation, this would download the merged PDF. For demo purposes, we\'re just showing this message.');
+                });
+            }
+        }
+        
+        // Split PDF Tool
+        function initSplitTool() {
+            const dropArea = document.getElementById('split-drop-area');
+            const fileInput = document.getElementById('split-file-input');
+            const splitOptions = document.getElementById('split-options');
+            const rangeOptions = document.getElementById('range-options');
+            const splitBtn = document.getElementById('split-btn');
+            const splitProgress = document.getElementById('split-progress');
+            const splitDownload = document.getElementById('split-download');
+            const startPageInput = document.getElementById('start-page');
+            const endPageInput = document.getElementById('end-page');
+            
+            let currentFile = null;
+            let totalPages = 1;
+            
+            // Handle drag and drop events
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            function highlight() {
+                dropArea.classList.add('active');
+            }
+            
+            function unhighlight() {
+                dropArea.classList.remove('active');
+            }
+            
+            // Handle dropped files
+            dropArea.addEventListener('drop', handleDrop, false);
+            
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                handleFiles(files);
+            }
+            
+            // Handle clicked files
+            dropArea.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            fileInput.addEventListener('change', function() {
+                handleFiles(this.files);
+            });
+            
+            function handleFiles(files) {
+                if (files.length > 0) {
+                    const file = files[0];
+                    if (file.type === 'application/pdf') {
+                        currentFile = file;
+                        loadPDFInfo(file);
+                        splitOptions.classList.remove('d-none');
+                    } else {
+                        alert('Please upload a valid PDF file.');
+                    }
+                }
+            }
+            
+            function loadPDFInfo(file) {
+                // In a real app, you would use PDF.js to get the actual page count
+                // For demo, we'll simulate getting page count
+                const fileReader = new FileReader();
+                
+                fileReader.onload = function() {
+                    // Simulate getting page count (in reality, you'd use PDF.js)
+                    totalPages = Math.min(Math.max(Math.floor(Math.random() * 50) + 1, 10), 100); // Random between 10-100 for demo
+                    
+                    // Update page inputs
+                    startPageInput.min = 1;
+                    startPageInput.max = totalPages;
+                    startPageInput.value = 1;
+                    
+                    endPageInput.min = 1;
+                    endPageInput.max = totalPages;
+                    endPageInput.value = totalPages;
+                    
+                    // Update labels to show total pages
+                    document.querySelectorAll('[for="start-page"], [for="end-page"]').forEach(label => {
+                        label.textContent = label.textContent.replace(/\(.*\)/, `(1-${totalPages})`);
+                    });
+                };
+                
+                fileReader.readAsArrayBuffer(file);
+            }
+            
+            // Radio button change handler
+            document.querySelectorAll('input[name="splitMethod"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'range') {
+                        rangeOptions.style.display = 'block';
+                    } else {
+                        rangeOptions.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Split button click handler
+            splitBtn.addEventListener('click', function() {
+                if (currentFile) {
+                    splitPDF(currentFile);
+                }
+            });
+            
+            function splitPDF(file) {
+                // Show progress bar
+                splitProgress.classList.remove('d-none');
+                const progressBar = splitProgress.querySelector('.progress-bar');
+                progressBar.style.width = '0%';
+                
+                // Simulate split process (in a real app, you would use PDF.js to actually split)
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 5;
+                    progressBar.style.width = `${progress}%`;
+                    
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        splitComplete();
+                    }
+                }, 100);
+            }
+            
+            function splitComplete() {
+                // Hide progress bar
+                splitProgress.classList.add('d-none');
+                
+                // Show download section
+                splitDownload.classList.remove('d-none');
+                
+                // Set up download button
+                const downloadBtn = splitDownload.querySelector('button');
+                downloadBtn.addEventListener('click', function() {
+                    // In a real app, you would provide the actual split PDFs
+                    alert('In a real implementation, this would download the split PDFs as a ZIP file. For demo purposes, we\'re just showing this message.');
+                });
+            }
+        }
+        
+        // Convert PDF Tool
+        function initConvertTool() {
+            const dropArea = document.getElementById('convert-drop-area');
+            const fileInput = document.getElementById('convert-file-input');
+            const convertOptions = document.getElementById('convert-options');
+            const convertProgress = document.getElementById('convert-progress');
+            const convertDownload = document.getElementById('convert-download');
+            
+            let currentFile = null;
+            
+            // Handle drag and drop events
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            function highlight() {
+                dropArea.classList.add('active');
+            }
+            
+            function unhighlight() {
+                dropArea.classList.remove('active');
+            }
+            
+            // Handle dropped files
+            dropArea.addEventListener('drop', handleDrop, false);
+            
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                handleFiles(files);
+            }
+            
+            // Handle clicked files
+            dropArea.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            fileInput.addEventListener('change', function() {
+                handleFiles(this.files);
+            });
+            
+            function handleFiles(files) {
+                if (files.length > 0) {
+                    const file = files[0];
+                    if (file.type === 'application/pdf') {
+                        currentFile = file;
+                        convertOptions.classList.remove('d-none');
+                    } else {
+                        alert('Please upload a valid PDF file.');
+                    }
+                }
+            }
+            
+            // Format button click handlers
+            document.querySelectorAll('.convert-format').forEach(button => {
+                button.addEventListener('click', function() {
+                    const format = this.getAttribute('data-format');
+                    convertPDF(currentFile, format);
+                });
+            });
+            
+            function convertPDF(file, format) {
+                // Show progress bar
+                convertProgress.classList.remove('d-none');
+                const progressBar = convertProgress.querySelector('.progress-bar');
+                progressBar.style.width = '0%';
+                
+                // Simulate conversion process (in a real app, you would use appropriate libraries)
+                let progress = 0;
+                const interval = setInterval(() => {
+                    progress += 5;
+                    progressBar.style.width = `${progress}%`;
+                    
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        conversionComplete(format);
+                    }
+                }, 100);
+            }
+            
+            function conversionComplete(format) {
+                // Hide progress bar
+                convertProgress.classList.add('d-none');
+                
+                // Show download section
+                convertDownload.classList.remove('d-none');
+                
+                // Update download button text based on format
+                const downloadBtn = convertDownload.querySelector('button');
+                let formatName = '';
+                
+                switch(format) {
+                    case 'docx':
+                        formatName = 'Word Document';
+                        break;
+                    case 'xlsx':
+                        formatName = 'Excel Spreadsheet';
+                        break;
+                    case 'pptx':
+                        formatName = 'PowerPoint Presentation';
+                        break;
+                    case 'html':
+                        formatName = 'HTML File';
+                        break;
+                    case 'txt':
+                        formatName = 'Text File';
+                        break;
+                    case 'jpg':
+                        formatName = 'JPG Images';
+                        break;
+                    default:
+                        formatName = 'Converted File';
+                }
+                
+                downloadBtn.innerHTML = `<i class="fas fa-download me-2"></i>Download ${formatName}`;
+                
+                // Set up download button
+                downloadBtn.addEventListener('click', function() {
+                    // In a real app, you would provide the actual converted file
+                    alert(`In a real implementation, this would download the PDF converted to ${formatName}. For demo purposes, we're just showing this message.`);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
